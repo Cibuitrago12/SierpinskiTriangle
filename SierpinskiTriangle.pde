@@ -11,7 +11,6 @@ public void setup()
 		int num = 699 / (int)Math.pow(2, i);
 		values.add(num);
 	}
-	System.out.println(values);
 }
 public void draw()
 {
@@ -22,8 +21,9 @@ public void draw()
 public void mouseClicked()//optional
 {
 		counter++;
+		if(counter < 10){
 		n = values.get(counter);
-		System.out.println("n: " + n);
+	}
 }
 public void sierpinski(int x, int y, int len, int n) 
 {
